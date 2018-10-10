@@ -1,11 +1,10 @@
 ;// Trevor Latchana
-;// Assembly Language Programming CS 397
-;// Instructor: Dr. Amenyo
+;// Assembly Language
 ;// 32 Bit Version
-;// App # 9  Grade calculator for a single course taken in a semester
-;//A) First write the code to supports the calculation of a letter grade for N=1 student, with K=5 raw scores.
-;//Devise your own grading table for (A+, A, A-, B+, B, B-, C+,C, C-, D+, D, F)
-;//B) Extend to code that supports the calculation of letter grades for at least N=10 students, each with K=10 raw scores. 
+;// Grade calculator for a single course taken in a semester
+;// A) First write the code to supports the calculation of a letter grade for N=1 student, with K=5 raw scores.
+;// Devise your own grading table for (A+, A, A-, B+, B, B-, C+,C, C-, D+, D, F)
+;// B) Extend to code that supports the calculation of letter grades for at least N=10 students, each with K=10 raw scores. 
 ;// Devise your own grading table.Also support the determination of the Minimum, Maximum, Mean scores obtained in the class, as well as the Median scores and Modes.
 ;// For each letter grade, calculate the number and percent of students who received that grade.
 
