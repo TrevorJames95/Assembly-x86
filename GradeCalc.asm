@@ -1,5 +1,4 @@
-;Trevor Latchana CS 397
-;Project # 1,  Professor Amenyo
+;Trevor Latchana 
 
 INCLUDE Irvine32.inc
 
@@ -122,7 +121,8 @@ COMMENT @
 ;//#2) Add the value 74 to the value in EAX.
 	ADD EAX, 74
 
-;//#3) Add the two numbers stored in memory at Number1 and Number2, and store the total at the memory location named Sum.
+;//#3) Add the two numbers stored in memory at Number1 and Number2, and store the total at the memory location named Sum.
+
 	MOV EDX, Number2
 	MOV EAX, Number1
 	ADD EAX, EDX
@@ -135,7 +135,8 @@ COMMENT @
 	mov EDX, EAX
 
 
-;//#5) Prompt for three (3) integer values from the user, add them, print or display the sum, as well as store it in the memory location declared as Sum.
+;//#5) Prompt for three (3) integer values from the user, add them, print or display the sum, as well as store it in the memory location declared as Sum.
+
 	MOV EDX, OFFSET stringSumPrompt
 	call crlf
 	call Writestring
@@ -453,8 +454,8 @@ M2:
 
 
 COMMENT @
-;//#16 Prompt the user for the values of A, B, C. Calculate: D = A + B+ C; E = A – B – C + D; F = A – (B – C)
-;//G = 8B + 71A – 80C; H = – ( – A + 2B – C + D); perform in sequence. Finally display the values for A, B, C, D, E, F, G, H.
+;//#16 Prompt the user for the values of A, B, C. Calculate: D = A + B+ C; E = A Â– B Â– C + D; F = A Â– (B Â– C)
+;//G = 8B + 71A Â– 80C; H = Â– ( Â– A + 2B Â– C + D); perform in sequence. Finally display the values for A, B, C, D, E, F, G, H.
 ;//Display also the values in all the registers at the end.
 
 ;//prompts the user for the values of A,B,C
@@ -476,7 +477,7 @@ COMMENT @
 	ADD EAX, lBval
 	mov lDval, EAX
 
-;//calculates the value for E = A – B – C + D stores the result in lEval
+;//calculates the value for E = A Â– B Â– C + D stores the result in lEval
 	mov eax, lAval
 	SUB eax, lBval
 	SUB eax, lCval
@@ -489,7 +490,7 @@ COMMENT @
 	SUB EAX, lCval
 	mov lFval, eax
 
-;//calculates the value for G = 8B + 71A – 80C and stores it into lGval
+;//calculates the value for G = 8B + 71A Â– 80C and stores it into lGval
 	mov eax, lBval
 	mov EDX, 8d
 	mul EDX
@@ -509,7 +510,7 @@ COMMENT @
 	mov lGval, EBX; //stores the result for G
 	mov eax, lGval
 
-;//calculates the value for H = – ( – A + 2B – C + D) and stores it into lHval   (– ( – A + 2B – C + D) is the same as A - 2B + C - D)
+;//calculates the value for H = Â– ( Â– A + 2B Â– C + D) and stores it into lHval   (Â– ( Â– A + 2B Â– C + D) is the same as A - 2B + C - D)
 
 	mov EAX, lBval
 	mov EDX, 2
